@@ -20,10 +20,6 @@
   box-sizing: border-box;
 }
 
-body{
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur104.cur'), auto;
-}
-
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -275,6 +271,7 @@ nav {
   max-width: 450px;
   margin-inline: auto;
   border-radius: 25rem;
+  
 }
 
 .header__image::after {
@@ -378,7 +375,9 @@ nav {
 .portfolio__card:hover img {
   transform: scale(1.1);
 }
-
+.portfolio__card h3,p{
+  text-align: center;
+}
 .portfolio__banner {
   margin-top: 2rem;
   padding: 2rem;

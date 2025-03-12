@@ -18,9 +18,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur104.cur'), auto;
 }
 
+body{
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur104.cur'), auto;
+}
 
 .section__container {
   max-width: var(--max-width);
@@ -85,8 +87,93 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--white);
   background-image: var(--gradient-1);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://media.istockphoto.com/id/1450018556/vector/snowflake-falling-hand-drawn-isolated-on-png-or-transparent-background-graphic-resources-for.jpg?s=612x612&w=0&k=20&c=6MMlLm5nYR6buRWtbWomN7cMaQqSZCq3NxmkHiy-89M=);
+  background-repeat: repeat;
+  -webkit-animation: snowfall01 20s linear infinite;
+  animation: snowfall01 20s linear infinite;
+}
+.snow::before {
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://media.istockphoto.com/id/1450018556/vector/snowflake-falling-hand-drawn-isolated-on-png-or-transparent-background-graphic-resources-for.jpg?s=612x612&w=0&k=20&c=6MMlLm5nYR6buRWtbWomN7cMaQqSZCq3NxmkHiy-89M=);
+  background-repeat: repeat;
+  content: '';
+  -webkit-animation: snowfall02 20s linear infinite;
+  animation: snowfall02 20s linear infinite;
+}
+.snow::after {
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://media.istockphoto.com/id/1450018556/vector/snowflake-falling-hand-drawn-isolated-on-png-or-transparent-background-graphic-resources-for.jpg?s=612x612&w=0&k=20&c=6MMlLm5nYR6buRWtbWomN7cMaQqSZCq3NxmkHiy-89M=);
+  background-repeat: repeat;
+  content: '';
+  -webkit-animation: snowfall03 20s linear infinite;
+  animation: snowfall03 20s linear infinite;
+}
+@-webkit-keyframes snowfall01 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 150px 600px;
+  }
+}
+@-webkit-keyframes snowfall02 {
+  0% {
+    background-position: 0 -200px;
+  }
+  100% {
+    background-position: 0 600px;
+  }
+}
+@-webkit-keyframes snowfall03 {
+  0% {
+    background-position: 0 200px;
+  }
+  100% {
+    background-position: 300px 600px;
+  }
+}
+@keyframes snowfall01 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 150px 600px;
+  }
+}
+@keyframes snowfall02 {
+  0% {
+    background-position: 0 -200px;
+  }
+  100% {
+    background-position: 0 600px;
+  }
+}
+@keyframes snowfall03 {
+  0% {
+    background-position: 0 200px;
+  }
+  100% {
+    background-position: 300px 600px;
+  }
+}
 nav {
   position: fixed;
   isolation: isolate;
@@ -143,7 +230,7 @@ nav {
 }
 
 .nav__links a {
-  color: var(--white);
+  color: black;
   transition: 0.3s;
 }
 
@@ -170,10 +257,12 @@ nav {
   margin-bottom: 1rem;
   font-size: 3rem;
   text-align: center;
+  color: black;
 }
 
 .header__content .section__description {
   margin-bottom: 2rem;
+  color: black;
 }
 
 .header__image {

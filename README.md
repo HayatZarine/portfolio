@@ -48,9 +48,9 @@ _For B.Tech students to access notes, PYQs, and recommended books._
 
 ## 🌐 Connect With Me
 
-- 💌 Email: yourname@email.com  
-- 💻 GitHub: [github.com/YourUsername](https://github.com/HayatZarine)  
-- 🔗 LinkedIn: [linkedin.com/in/YourProfile](https://linkedin.com/in/zarine-hayat-choudhury-9a5108335)
+- 💌 Email: hayatzarine@gmail.com  
+- 💻 GitHub: (https://github.com/HayatZarine)  
+
 
 ---
 
